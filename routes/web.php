@@ -12,10 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('main');
 });
-
-
 
 Route::fallback(function(){
     $myVar = 'Some error';
@@ -23,6 +21,9 @@ Route::fallback(function(){
 });
 
 Route::any('/login', 'Auth\LoginController@login');
+Route::any('/registration', function () {
+    return view('registration');
+}); //TODO!
 
 Auth::routes();
 
