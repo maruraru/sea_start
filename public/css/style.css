@@ -12,6 +12,7 @@ body {
   margin-bottom: 120px;
 }
 
+
 .ml-negative-4 {
   margin-left: -4rem !important;
 }
@@ -25,6 +26,9 @@ body {
 .mb-negative-2 {
   margin-bottom: -2rem !important;
 }
+.mb-negative-3 {
+  margin-bottom: -3rem !important;
+}
 
 .z-indexed-3 {
   z-index: 30;
@@ -36,10 +40,21 @@ body {
   z-index: 10;
 }
 
+.b-shadow-05 {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.b-shadow-03 {
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
 /*-----------------------------------------------------------IMG: TOP--------------------------------------------------------*/
 
 .icon-12{
   height: 12px;
+  width: auto;
+}
+.icon-14{
+  height: 14px;
   width: auto;
 }
 .icon-16{
@@ -211,7 +226,7 @@ a img {
   background: #fafafa;
 }
 .blue-background{
-  background: #607993;
+  background: #1d71b8;
 }
 .light-blue-background{
   background: #86aacd;
@@ -244,7 +259,7 @@ a img {
   top:2.5rem;
   height: 6px;
   width: 170px;
-  background: #607993;
+  background: #1d71b8;
 }
 
 .control-label{
@@ -276,7 +291,7 @@ a img {
 /*---------------------------------------------------------SPECIFIC: TOP---------------------------------------------------*/
 
 .wave{
-  height: 50px;
+  height: 70px;
   background:  url("/images/wave.png") top center repeat-x;
 }
 

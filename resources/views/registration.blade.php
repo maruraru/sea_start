@@ -6,12 +6,12 @@
 
 <main>
   <div class='container'>
-    <div class="row my-0 mb-negative-2 mt-5">
+    <div class="row my-0 mb-negative-3 mt-5">
       <div class="col-6 offset-3 wave-2 z-indexed-3">
       </div>
     </div>
     <div class='row'>
-      <div class='col-6 offset-3 form-container light-blue-background mb-5 py-5'>
+      <div class='col-6 offset-3 form-container b-shadow-05 mb-5 py-5'>
         <div class="col-7">
           <h3 class='font-2 oswald weight-700 text-left mb-4'>Регистрация</h3>
         </div>

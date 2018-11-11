@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('main');
 });
 
+Route::get('/personalArea', function () {
+    return view('personalArea');
+}); //TODO
+
 Route::fallback(function(){
     $myVar = 'Some error';
     return view('404', compact('myVar'));
@@ -23,7 +27,7 @@ Route::fallback(function(){
 Route::any('/login', 'Auth\LoginController@login');
 Route::any('/registration', function () {
     return view('registration');
-}); //TODO!
+}); //TODO
 
 Auth::routes();
 

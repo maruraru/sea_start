@@ -23,7 +23,7 @@
 
   <div class="container-fluid">
     <div class="wave row my-0"></div>
-    <div class="light-blue-background row d-block my-0 pt-5 pb-1">
+    <div class="blue-background row d-block my-0 pt-5 pb-1">
       <div class="offset-2 col-7 text-right mb-3">
         <h1 class='font-light font-3 weight-800 mb-0'>Прими участие прямо сейчас </h1>
         <h4 class='font-light  font-1 weight-600 uppercase o-sans'>Пройди отборочный онлайн-тур</h4>

@@ -22,7 +22,7 @@
         <div class="container-fluid py-2">
           <div class='row align-items-center'>
             <div class="col-4">
-              <a href="{{ url('/') }}" class="navbar-brand">
+              <a href="#" class="navbar-brand">
                 <img class="icon-48" src="{{ asset('images/icons/sevsu_logo.png') }}" alt=" "/>
               </a>
             </div>
