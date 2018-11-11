@@ -27,13 +27,16 @@
       <div class="offset-2 col-7 text-right mb-3">
         <h1 class='font-light font-3 weight-800 mb-0'>Прими участие прямо сейчас </h1>
         <h4 class='font-light  font-1 weight-600 uppercase o-sans'>Пройди отборочный онлайн-тур</h4>
-        <a class='font-light link normalcase'>Скачать положение (pdf)</a>
+        <a href="#" class='font-light link normalcase'>Скачать положение (pdf)</a>
       </div>
       <div class="offset-3 col-6 text-center">
         <form class='mb-1' action='#' method="POST">
           <input class='btn btn-success o-sans uppercase px-4' type="submit" name="registrationButton" value="Регистрация"/>
         </form>
-        <p class="font-light font-08 uppercase">Уже есть аккаунт? Тогда Вы можете <a class='underlined weight-600'>Войти</a></p>
+        <p class="font-light font-08 uppercase">
+          Уже есть аккаунт? Тогда Вы можете
+          <a href="#" class='underlined weight-600'>Войти</a>
+        </p>
       </div>
     </div>
     <div class="wave-reverse row mt-0 mb-4"></div>
