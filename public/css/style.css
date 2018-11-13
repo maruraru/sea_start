@@ -1,0 +1,346 @@
+*{
+  margin:0;
+  padding:0;
+ /* outline: 1px solid red;*/
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 120px;
+}
+
+
+.ml-negative-4 {
+  margin-left: -4rem !important;
+}
+.ml-negative-5 {
+  margin-left: -5rem !important;
+}
+.ml-negative-6 {
+  margin-left: -6rem !important;
+}
+
+.mb-negative-2 {
+  margin-bottom: -2rem !important;
+}
+.mb-negative-3 {
+  margin-bottom: -3rem !important;
+}
+
+.z-indexed-3 {
+  z-index: 30;
+}
+.z-indexed-2 {
+  z-index: 20;
+}
+.z-indexed-1 {
+  z-index: 10;
+}
+
+.b-shadow-05 {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.b-shadow-03 {
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.of-y-hidden{
+  overflow-y: hidden;
+}
+.of-x-hidden{
+  overflow-x: hidden;
+}
+
+
+/*-----------------------------------------------------------IMG: TOP--------------------------------------------------------*/
+
+.icon-12{
+  height: 12px;
+  width: auto;
+}
+.icon-14{
+  height: 14px;
+  width: auto;
+}
+.icon-16{
+  height: 16px;
+  width: auto;
+}
+.icon-18{
+  height: 18px;
+  width: auto;
+}
+.icon-20{
+  height: 20px;
+  width: auto;
+}
+.icon-24{
+  height: 24px;
+  width: auto;
+}
+.icon-32 {
+  height: 32px;
+  width: auto;
+}
+.icon-48 {
+  height: 48px;
+  width: auto;
+}
+.icon-64 {
+  height: 48px;
+  width: auto;
+}
+
+/*-----------------------------------------------------------IMG: BOTTOM-----------------------------------------------------*/
+
+/*-----------------------------------------------------------FONT: TOP-------------------------------------------------------*/
+
+h1,h2{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #232323;
+}
+p,h3,h4,h5,h6{
+  font-family: 'Open Sans', sans-serif;
+  color: #505050;
+  font-size: 1rem;
+}
+.o-sans{
+  font-family: 'Open Sans', sans-serif;
+}
+.oswald{
+  font-family: 'Oswald', sans-serif;
+}
+.underlined{
+  text-decoration: underline !important;
+}
+.uppercase{
+  text-transform: uppercase !important;
+}
+.lowcase{
+  text-transform: lowercase !important;
+}
+.normalcase{
+  text-transform: none !important;
+}
+.font-light{
+  color: #fafafa !important;
+}
+.font-dark{
+  color: #505050 !important;
+}
+.font-double-dark{
+  color: #232323 !important;
+}
+.font-05{
+  font-size: 0.5rem;
+}
+.font-04{
+  font-size: 0.4rem;
+}
+.font-08{
+  font-size: 0.8rem;
+}
+.font-09{
+  font-size: 0.9rem;
+}
+.font-1{
+  font-size: 1rem;
+}
+.font-1d5{
+  font-size: 1.5rem;
+}
+.font-2{
+  font-size: 2rem;
+}
+.font-3{
+  font-size: 3rem;
+}
+.font-4{
+  font-size: 4rem;
+}
+.font-72px{
+  font-size: 72px;
+}
+.font-20px{
+  font-size: 20px;
+}
+.font-14px{
+  font-size: 14px;
+}
+.weight-400{
+  font-weight: 400;
+}
+.weight-600{
+  font-weight: 600;
+}
+.weight-700{
+  font-weight: 700;
+}
+.weight-800{
+  font-weight: 800;
+}
+.weight-900{
+  font-weight: 900;
+}
+
+/*---------------------------------------------------------FONT: BOTTOM------------------------------------------------------*/
+
+/*---------------------------------------------------------LINKS: TOP--------------------------------------------------------*/
+a:hover {
+  cursor: pointer !important;
+}
+a img {
+  border: none !important;
+  color: #fafafa;
+}
+.link, .link > span {
+  position: relative;
+  color: #fafafa;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+.link-dark{
+  color: #505050;
+}
+.link:before,  .link:after, .link > span:before, .link > span:after {
+  content: '';
+  position: absolute;
+  transition: transform .5s ease;
+}
+.link:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background:#fafafa;
+  transform: scaleX(0);
+}
+
+.link-dark:before{
+  background:#505050;
+}
+
+.link:hover{
+  color:#fafafa;
+  text-decoration: none;
+}
+.link-dark:hover{
+  color:#505050;
+  text-decoration: none;
+}
+.link:hover:before {
+  transform: scaleX(1);
+}
+
+.link img{
+  margin: 0 0.5em 0.3em 0;
+}
+
+/*---------------------------------------------------------LINKS: BOTTOM-----------------------------------------------------*/
+
+/*---------------------------------------------------------BACKGROUND: TOP---------------------------------------------------*/
+
+.ligth-backgroud {
+  background: #fafafa;
+}
+.blue-background{
+  background: #1d71b8;
+}
+.light-blue-background{
+  background: #86aacd;
+}
+
+/*---------------------------------------------------------BACKGROUND: BOTTOM-----------------------------------------------*/
+
+/*----------------------------------------------------------FORM:TOP--------------------------------------------------------*/
+.form-container, .div-container{
+  background:  url("/images/form-background.png");
+  background-size: cover;
+  padding-top: 1.5rem;
+  overflow-x:hidden;
+}
+
+.form-container h3, .div-container h3{
+  margin-top: 0;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  color: #232323;
+  font-weight: 600;
+  text-align: left;
+}
+
+.form-container h3:after, .div-container h3:after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top:2.5rem;
+  height: 6px;
+  width: 170px;
+  background: #1d71b8;
+}
+
+.div-container h5:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top:4rem;
+  height: 5px;
+  width: 220px;
+  background: #1d71b8;
+}
+
+.div-container p a{
+  text-transform: none;
+  font-size: 14px;
+}
+
+.control-label{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.form-group.required .control-label:after { 
+   content:"*";
+   color:red;
+}
+
+/*---------------------------------------------------------FORM: BOTTOM-----------------------------------------------------*/
+
+/*---------------------------------------------------------FOOTER: TOP------------------------------------------------------*/
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* fixed height of the footer */
+  height: 120px;
+}
+
+/*---------------------------------------------------------FOOTER: BOTTOM---------------------------------------------------*/
+
+/*---------------------------------------------------------SPECIFIC: TOP---------------------------------------------------*/
+
+.wave{
+  height: 70px;
+  background:  url("/images/wave.png") top center repeat-x;
+}
+
+.wave-2{
+  height: 70px;
+  background:  url("/images/wave2.png") top center repeat-x;
+}
+
+.wave-reverse{
+  height: 70px;
+  background:  url("/images/wave-reverse.png") top center repeat-x;
+}
+
+/*---------------------------------------------------------SPECIFIC: BOTTOM---------------------------------------------------*/
+
