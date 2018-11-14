@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
         DB::table('users')->insertGetId(
             [
-                'first_name' => 'Иван',
+                'name' => 'Иван',
                 'second_name' => 'Иванов',
                 'last_name' => 'Иванович',
                 'email' => 'test1@gmail.com',
@@ -23,6 +23,19 @@ class DatabaseSeeder extends Seeder
                 'school' => 'Школа№4',
                 'class' => '10',
                 'password' => Hash::make('123456'),
+            ]
+        );
+        DB::table('users')->insertGetId(
+            [
+                'name' => 'Админ',
+                'second_name' => '-',
+                'last_name' => '-',
+                'email' => 'admin@email.com',
+                'phone' => '0000000000',
+                'city' => '-',
+                'school' => '-',
+                'class' => '-',
+                'password' => Hash::make('sea_start'),
             ]
         );
     }

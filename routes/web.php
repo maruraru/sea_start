@@ -27,3 +27,8 @@ Route::any('/login', 'Auth\LoginController@login');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

@@ -12,7 +12,7 @@
                             <div class ='row d-flex justify-content-end align-items-end mx-0 mb-3 px-0 py-1'>
                                 <img class="icon-14 mr-1 " src="{{ asset('images/icons/user-pArea.png') }} " alt=" " />
                                 <h5 class='uppercase font-14px weight-600 m-0'>
-                                    {{Auth::user()->second_name.' '.Auth::user()->first_name.' '.Auth::user()->last_name}}
+                                    {{Auth::user()->second_name.' '.Auth::user()->name.' '.Auth::user()->last_name}}
                                 </h5>
                             </div>
                             <div class ='row d-flex justify-content-end align-items-end mx-0 mb-3 p-0'>
