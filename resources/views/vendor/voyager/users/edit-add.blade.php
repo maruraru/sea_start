@@ -58,6 +58,12 @@
                             </div>
 
                             <div class="form-group">
+                                <label for="city"> Город </label>
+                                <input type="text" class="form-control" id="city" name="city" placeholder="Город"
+                                       value="@if(isset($dataTypeContent->city)){{ $dataTypeContent->city }}@endif">
+                            </div>
+
+                            <div class="form-group">
                                 <label for="email">{{ __('voyager::generic.email') }}</label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="{{ __('voyager::generic.email') }}"
                                        value="@if(isset($dataTypeContent->email)){{ $dataTypeContent->email }}@endif">
