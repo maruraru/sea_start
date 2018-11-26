@@ -35,24 +35,40 @@
                             <div class='row text-left pt-3 mb-2 pl-3'>
                                 <h2 class='font-dark font-2 weight-800'>Выберите направление</h2>
                             </div>
+                            @foreach($blocks as $block)
+                                <h2>
+                                    <a href="test_preparing/{{$block->id}}" class='link link-dark ' >{{$block->name}}</a>
+                                </h2>
+                                @foreach($subjects as $subject)
+                                    @if($block->id === $subject->id_block)
+                                        <p class='mb-1'> {{$subject->name}} </p>
+                                    @endif
+                                @endforeach
+                            @endforeach
+
+                            <!-- Old code without database -->
                             <div class='row d-flex pt-3 mb-1'>
                                 <div class='col-5 d-block'>
                                     <div class='d-flex justify-content-center mb-2'>
                                         <img src="{{ asset('images/icons/natural_science.png') }}" alt=" "/>
                                     </div>
-                                    <h2 class='font-dark font-1 weight-800 text-center'>Естественные науки</h2>
-                                    <p class='mb-1'><a href="#" class='link link-dark'>Математика</a></p>
-                                    <p class='mb-1'><a href="#" class='link link-dark'>Физика</a></p>
-                                    <p><a href="#" class='link link-dark'>Информатика</a></p>
+                                    <h2 class='font-dark font-1 weight-800 text-center'>
+                                        <a href="test_preparing/1" class='link link-dark' >Естественные науки</a>
+                                    </h2>
+                                    <p class='mb-1'>Математика</p>
+                                    <p class='mb-1'>Физика</p>
+                                    <p class='mb-1'>Информатика</p>
                                 </div>
                                 <div class='col-5 offset-1 '>
                                     <div class='d-flex justify-content-center mb-2'>
                                         <img src="{{ asset('images/icons/humanitarian_science.png') }}" alt=" "/>
                                     </div>
-                                    <h2 class='font-dark font-1 weight-800 text-center'>Гуманитарные науки</h2>
-                                    <p class='mb-1'><a href="#" class='link link-dark'>История</a></p>
-                                    <p class='mb-1'><a href="#" class='link link-dark'>Обществознание</a></p>
-                                    <p><a href="#" class='link link-dark'>География</a></p>
+                                    <h2 class='font-dark font-1 weight-800 text-center'>
+                                        <a href="test_preparing/2" class='link link-dark' >Гуманитарные науки</a>
+                                    </h2>
+                                    <p class='mb-1'>История</p>
+                                    <p class='mb-1'>Обществознание</p>
+                                    <p class='mb-1'>География</p>
                                 </div>
                             </div>
                             <div class='row d-flex pt-3 mb-2'>
@@ -60,9 +76,11 @@
                                     <div class='d-flex justify-content-center mb-2'>
                                         <img src="{{ asset('images/icons/technics.png') }}" alt=" "/>
                                     </div>
-                                    <h2 class='font-dark font-1 weight-800 text-center'>Техника и технологии</h2>
+                                    <h2 class='font-dark font-1 weight-800 text-center'>
+                                        <a href="test_preparing/3" class='link link-dark' >Техника и технологии</a>
+                                    </h2>
                                     <p>
-                                        <a href="#" class='link link-dark'>Техника и технологии кораблестроения и водного транспорта</a>
+                                        Техника и технологии кораблестроения и водного транспорта
                                     </p>
                                 </div>
                             </div>

@@ -28,7 +28,9 @@
                 </a>
             </div>
             <div class="col-4 text-right">
-                <h1 class="font-light font-3 weight-700 mb-0 float-right">Морской старт</h1>
+                <a href="{{ url('/') }} ">
+                    <h1 class="font-light font-3 weight-700 mb-0 float-right">Морской старт</h1>
+                </a>
                 <h3 class="font-light font-1 weight-600 float-right ">seastart@sevsu.ru</h3>
             </div>
             <div class="col-4">

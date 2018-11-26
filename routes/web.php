@@ -26,9 +26,14 @@ Route::any('/login', 'Auth\LoginController@login');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
+Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/test_preparing/{block}', 'TestPreparingController@index');
+Route::get('/test/{block}', 'TestController@index');
+Route::post('/test', 'TestController@save')->name('submitTest');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+

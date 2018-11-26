@@ -30,12 +30,10 @@
                     <a href="#" class='font-light link normalcase'>Скачать положение (pdf)</a>
                 </div>
                 <div class="offset-3 col-6 text-center">
-                    <form class='mb-1' action='#' method="POST">
-                        <input class='btn btn-success o-sans uppercase px-4' type="submit" name="registrationButton" value="Регистрация"/>
-                    </form>
+                    <a  href="{{ route('register') }}" class="btn btn-success o-sans uppercase px-4">{{ __('Регистрация') }}</a>
                     <p class="font-light font-08 uppercase">
                         Уже есть аккаунт? Тогда Вы можете
-                        <a href="#" class='underlined weight-600'>Войти</a>
+                        <a href="{{ route('login') }}" class="link underlined d-inline-flex align-items-end font-08 uppercase" >{{ __('Войти ') }}</a>
                     </p>
                 </div>
             </div>

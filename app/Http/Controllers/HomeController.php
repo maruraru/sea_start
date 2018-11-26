@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $blocks = DB::table('subjects_blocks')->get();
+        $subjects = DB::table('subjects')->get();
+        return view('home', ['blocks'=>$blocks, 'subjects'=>$subjects]);
     }
 }
